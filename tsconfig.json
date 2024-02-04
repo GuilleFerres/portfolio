@@ -1,3 +1,10 @@
 {
-  "extends": "astro/tsconfigs/strict"
+  "extends": "astro/tsconfigs/strict",
+  "compilerOptions": {
+    "module": "ESNext",
+    "target": "ESNext",
+    "moduleResolution": "node", // Esta línea configura la estrategia de resolución de módulos
+    "resolveJsonModule": true, // Habilita la importación de archivos JSON como módulos
+    // Otras opciones de configuración...
+  },
 }
