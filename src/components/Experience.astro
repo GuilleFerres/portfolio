@@ -1,0 +1,36 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+const EXPERIENCE = [
+    {
+        title: "Programador Front-end en Wegow",
+        description: "",
+        link: "",
+        date: "26-05-2021/actualidad",
+        latest: true,
+    },
+    {
+        title: "Programador Front-end en Beebit",
+        description: "",
+        link: "",
+        date: "09-12-2021/actualidad",
+        latest: true,
+    },
+    {
+        title: "Practicas como Programador Front-end en iMarina",
+        description: "",
+        link: "",
+        date: "06-03-2021/21-06-2021",
+        latest: false,
+    }
+]
+---
+<ol class="relative border-s border-gray-200 dark:border-gray-700">                           
+    {
+        EXPERIENCE.map((experience)=> (
+            <li class="mb-10 ms-6">
+                <ExperienceItem {...experience}></ExperienceItem>
+            </li>
+        ))
+    }
+</ol>
+

@@ -2,14 +2,19 @@
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import Badge from '../components/Badge.astro';
-import Linkedin from '../icons/Linkedin.astro';
-import Github from '../icons/Github.astro';
+import LinkedinIcon from '../icons/LinkedinIcon.astro';
+import GithubIcon from '../icons/GithubIcon.astro';
 import SocialPill from '../components/SocialPill.astro';
+import MailIcon from '../icons/MailIcon.astro';
+import SectionContainer from '../components/SectionContainer.astro';
+import Experience from '../components/Experience.astro';
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Perfil de Guillermo Ferres - Programador y Desarrollador Web"
+		description="¿Buscas un desarrollador y programador frontend para tus proyectos de Programación y Desarrollo Web? ¡Contacta a Guillermo Ferres Sánchez para obtener soluciones profesionales y de alta calidad! También estoy interesado en participar en proyectos colaborativos. ¡Espero colaborar contigo en tu próximo proyecto!">
 	<main>
-		<section class="w-full py-44 mx-auto lg:w-[740px]">
+		<img class="rounded-full size-12 mt-44 mb-4" src="https://media.licdn.com/dms/image/C5603AQGVMk-1UhYeiA/profile-displayphoto-shrink_400_400/0/1630324161757?e=2147483647&v=beta&t=DzO_AWls4WQW9ohYz8Ejshc1sawZx_h4EqklDYCuZ7U" alt="guillermo ferres photo">
+		<SectionContainer>
 			<h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-8">
 				<span>Hola, soy Guillermo</span> 
 				<a href="https://es.linkedin.com/in/guillermo-ferres-s%C3%A1nchez-9653501a3"
@@ -20,21 +25,30 @@ import SocialPill from '../components/SocialPill.astro';
 				</a>
 			</h1>
 			<h2 class="text-2xl opacity-80 text-wrap">2 años de experiencia. Desarrollador Web Front-end. De Granada, España.</h2>
-			<ul class="my-4 flex gap-x-2">
+			<ul class="my-4 flex gap-x-4">
 				<li>
 					<SocialPill href="https://es.linkedin.com/in/guillermo-ferres-s%C3%A1nchez-9653501a3">
-						<Linkedin class="w-6 h-6"></Linkedin>
+						<LinkedinIcon class="size-6"></LinkedinIcon>
 						LinkedIn
 					</SocialPill>
 				</li>
 				<li>
 					<SocialPill href="https://github.com/GuilleFerres">
-						<Github class="w-6 h-6"></Github>
+						<GithubIcon class="size-6"></GithubIcon>
 						Github
 					</SocialPill>
 				</li>
+				<li>
+					<SocialPill href="https://github.com/GuilleFerres">
+						<MailIcon class="size-6"></MailIcon>
+						guillermoferressanchez@gmail.com
+					</SocialPill>
+				</li>
 			</ul>
-		</section>
+		</SectionContainer>
+		<SectionContainer>
+			<Experience></Experience>
+		</SectionContainer>
 		
 	</main>
 </Layout>
