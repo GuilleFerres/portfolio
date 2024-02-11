@@ -6,6 +6,7 @@ import LinkedinIcon from '../icons/LinkedinIcon.astro';
 import GithubIcon from '../icons/GithubIcon.astro';
 import SocialPill from '../components/SocialPill.astro';
 import MailIcon from '../icons/MailIcon.astro';
+import BriefcaseIcon from '../icons/BriefcaseIcon.astro';
 import SectionContainer from '../components/SectionContainer.astro';
 import Experience from '../components/Experience.astro';
 ---
@@ -13,9 +14,10 @@ import Experience from '../components/Experience.astro';
 <Layout title="Perfil de Guillermo Ferres - Programador y Desarrollador Web"
 		description="¿Buscas un desarrollador y programador frontend para tus proyectos de Programación y Desarrollo Web? ¡Contacta a Guillermo Ferres Sánchez para obtener soluciones profesionales y de alta calidad! También estoy interesado en participar en proyectos colaborativos. ¡Espero colaborar contigo en tu próximo proyecto!">
 	<main>
-		<img class="rounded-full size-12 mt-44 mb-4" src="https://media.licdn.com/dms/image/C5603AQGVMk-1UhYeiA/profile-displayphoto-shrink_400_400/0/1630324161757?e=2147483647&v=beta&t=DzO_AWls4WQW9ohYz8Ejshc1sawZx_h4EqklDYCuZ7U" alt="guillermo ferres photo">
-		<SectionContainer>
+		<img class="rounded-full size-12 mt-40 mb-4" src="https://media.licdn.com/dms/image/C5603AQGVMk-1UhYeiA/profile-displayphoto-shrink_400_400/0/1630324161757?e=2147483647&v=beta&t=DzO_AWls4WQW9ohYz8Ejshc1sawZx_h4EqklDYCuZ7U" alt="guillermo ferres photo">
+		<SectionContainer class="pt-6 pb-16">
 			<h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-8">
+				<span>👋🏼</span>
 				<span>Hola, soy Guillermo</span> 
 				<a href="https://es.linkedin.com/in/guillermo-ferres-s%C3%A1nchez-9653501a3"
 				   target="_blank"
@@ -46,7 +48,11 @@ import Experience from '../components/Experience.astro';
 				</li>
 			</ul>
 		</SectionContainer>
-		<SectionContainer>
+		<SectionContainer id="experience">
+			<h2 class="text-xl2 font-semibold mb-6 flex items-center gap-x-2">
+				<BriefcaseIcon class="size-7"></BriefcaseIcon>
+				Experiencia laboral
+			</h2>
 			<Experience></Experience>
 		</SectionContainer>
 		
