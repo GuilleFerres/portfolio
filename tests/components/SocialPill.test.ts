@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import { render } from '@testing-library/astro';
-import SocialPill from '../SocialPill.astro';
+import SocialPill from '../../src/components/SocialPill.astro';
 
 describe('SocialPill', () => {
   it('includes rel="noopener noreferrer" when target="_blank"', async () => {
