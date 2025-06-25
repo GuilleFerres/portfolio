@@ -1,8 +1,8 @@
 import { describe, it, expect } from 'vitest';
 import { render } from '@testing-library/astro';
-import BlogIndex from '../blog/index.astro';
+import BlogIndex from '../../src/pages/blog/index.astro';
 
-import posts from '../../../data/posts.json';
+import posts from '../../data/posts.json';
 
 describe('BlogIndex', () => {
   it('muestra un enlace al primer post', async () => {
