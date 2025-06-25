@@ -1,0 +1,14 @@
+[
+  {
+    "slug": "primer-post",
+    "title": "Primer post",
+    "date": "2024-01-01",
+    "content": "Contenido del primer post"
+  },
+  {
+    "slug": "segundo-post",
+    "title": "Segundo post",
+    "date": "2024-05-02",
+    "content": "Contenido del segundo post"
+  }
+]
