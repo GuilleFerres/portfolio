@@ -7,9 +7,9 @@ if (!post) throw new Error(`Post ${slug} not found`);
 ---
 
 <Layout title={post.title} description={post.title}>
-  <article class="prose mx-auto">
-    <h1 class="text-3xl font-bold mb-4">{post.title}</h1>
-    <p class="text-sm text-gray-500 mb-8">{post.date}</p>
+  <article class="blog-post">
+    <h1>{post.title}</h1>
+    <p class="blog-post-date">{post.date}</p>
     <p>{post.content}</p>
   </article>
 </Layout>

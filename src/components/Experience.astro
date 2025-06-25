@@ -24,10 +24,10 @@ const EXPERIENCE = [
     }
 ]
 ---
-<ol class="relative border-s border-gray-200 dark:border-gray-700">                           
+<ol class="timeline">
     {
         EXPERIENCE.map((experience)=> (
-            <li class="mb-10 ms-6">
+            <li class="timeline-item">
                 <ExperienceItem {...experience}></ExperienceItem>
             </li>
         ))
