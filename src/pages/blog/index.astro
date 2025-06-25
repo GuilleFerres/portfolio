@@ -1,0 +1,18 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import posts from '../../../data/posts.json';
+---
+
+<Layout title="Blog" description="Artículos recientes">
+  <h1 class="text-3xl font-bold mb-8">Blog</h1>
+  <ul class="space-y-4">
+    {posts.map(post => (
+      <li>
+        <a href={`/blog/${post.slug}/`} class="text-blue-600 underline">
+          {post.title}
+        </a>
+        <span class="text-sm text-gray-500 ml-2">{post.date}</span>
+      </li>
+    ))}
+  </ul>
+</Layout>
